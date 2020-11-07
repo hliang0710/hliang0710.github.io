@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Hannah Liang</title>
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+      body {
+        background-color: lightseagreen;
+      }
+      #card {
+        width: 744px;
+        height: 524px;
+        background-color: white;
+        position: relative;
+      }
+      #intro {
+        width: 238px;
+        height: 284px;
+        background-color: darkseagreen;
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        color: white;
+        padding-left: 24px;
+      }
+      #center {
+        width: 320px;
+        height: 528px;
+        /*background-color: grey;*/
+        position: absolute;
+        left: 238px;
+        color: grey;
+        padding-left: 24px;
+        padding-top: 50px;
+      }
+      h2 {
+        color: lightseagreen;
+      }
+      #right {
+        width: 186px;
+        height: 528px;
+        position: absolute;
+        right: 0;
+      }
+      .skill {
+        margin-top: 12px;
+        width: 138px;
+        height: 32px;
+        //background-color: blue;
+        position: relative;
+        color: grey;
+      }
+      .grey-bar {
+        width: 138px;
+        height: 12px;
+        background-color: grey;
+        position: absolute;
+        bottom: 0;
+        border-radius: 6px;
+      }
+      .green-bar {
+        width: 69px;
+        height: 12px;
+        background-color: lightseagreen;
+        position: absolute;
+        bottom: 0;
+        border-radius: 6px;
+      }
+
+      .green-bar-2 {
+        width: 24px;
+        height: 12px;
+        background-color: lightseagreen;
+        position: absolute;
+        bottom: 0;
+        border-radius: 6px;
+      }
+      .right-text {
+        position: absolute;
+        top: 0;
+        right: 0;
+      }
+      img{
+        position:absolute; 
+        top:0;
+        left:0;
+      }
+    </style>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script>
+      $(function () {
+        $("#img-2"). hide();
+        $("#img-1").click(function(){
+         $("#img-1"). fadeout();
+         $("#img-2"). fadein();
+       })
+        $("#img-2").click(function(){
+         $("#img-2"). fadeout();
+         $("#img-1"). fadein();
+       })
+      });
+    </script>
+  </head>
+  <body>
+    <div id="card">
+      <img src="Au" id="img-1" width="238" height="244" />
+      <img src="BU" id="img-2" width="238" height="244" />
+      <div id="intro">
+        <h1>Hannah Liang</h1>
+        <p>Credit Analyst</p>
+        <p>
+          Taipei, Taiwan
+        </p>
+        <p>E-mail: hliang@yahoo.com</p>
+      </div>
+      <div id="center">
+        <h2>About me</h2>
+        <p>live in Taipei, Taiwan</p>
+        <p>fluent in Chinese and English</p>
+        <h2>Experience</h2>
+        <li>
+          2015 to current: xx Bank
+        </li>
+        <li>
+          2008 to 2015 : oo Bank
+        </li>
+        <h2>Licenses</h2>
+        <li>
+          Financial Market
+        </li>
+        <li>
+          Trade Finance
+        </li>
+      </div>
+      <div id="right">
+        <h2>Personality</h2>
+        <div class="skill">
+          Intrio
+          <div class="right-text">outgoing</div>
+          <div class="grey-bar"></div>
+          <div class="green-bar-2" style="left: 70%;"></div>
+        <div class="skill">
+          Sad
+          <div class="right-text">Happy</div>
+          <div class="grey-bar"></div>
+          <div class="green-bar-2" style="left: 60%;"></div>
+        </div>
+        <h2>Skills</h2>
+        <div class="skill">
+          Microsoft
+          <div class="grey-bar"></div>
+          <div class="green-bar" style="width: 60%;"></div>
+        </div>
+        <div class="skill">
+          Chinese
+          <div class="grey-bar"></div>
+          <div class="green-bar" style="width: 80%;"></div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
